@@ -907,10 +907,9 @@ body {
   padding: 120px 0;
 }
 .fun-facts {
-  background: url("res/john-price-RAZQiZOX3mU-unsplash.jpg");
+  background: url("./");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 0% 100%;
 }
 .fun-facts .single-fun {
 }
@@ -1014,7 +1013,7 @@ body {
 .why-choose .choose-right {
   height: 100%;
   width: 100%;
-  background-image: url("img/video-bg.jpg");
+  background-image: url("res/kelly-sikkema-NXv3XcMyDy0-unsplash.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
