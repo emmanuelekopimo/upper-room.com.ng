@@ -687,13 +687,13 @@ pre code {
 
 @media (min-width: 768px) {
   .container {
-    max-width: 720px;
+    max-width: 820px;
   }
 }
 
 @media (min-width: 992px) {
   .container {
-    max-width: 960px;
+    max-width: 1000px;
   }
 }
 
@@ -718,6 +718,7 @@ pre code {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+  align-items: stretch;
 }
 
 .no-gutters {
@@ -1352,9 +1353,9 @@ pre code {
     max-width: 8.333333%;
   }
   .col-lg-2 {
-    -ms-flex: 0 0 16.666667%;
-    flex: 0 0 16.666667%;
-    max-width: 16.666667%;
+    -ms-flex: 0 0 8%;
+    flex: 0 0 8%;
+    max-width: 8%;
   }
   .col-lg-3 {
     -ms-flex: 0 0 25%;
@@ -1377,9 +1378,9 @@ pre code {
     max-width: 50%;
   }
   .col-lg-7 {
-    -ms-flex: 0 0 58.333333%;
-    flex: 0 0 58.333333%;
-    max-width: 58.333333%;
+    -ms-flex: 0 0 65%;
+    flex: 0 0 65%;
+    max-width: 65%;
   }
   .col-lg-8 {
     -ms-flex: 0 0 66.666667%;

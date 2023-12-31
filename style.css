@@ -139,7 +139,7 @@ body {
   box-shadow: 0px 0px 10px #00000026;
 }
 #scrollUp:hover {
-  background: #2c2d3f;
+  background: #000000;
 }
 /* Color Plate */
 .color-plate {
@@ -268,7 +268,7 @@ body {
   margin-right: 0px;
 }
 .header .top-link li a {
-  color: #2c2d3f;
+  color: #000000;
   font-size: 14px;
   font-weight: 400;
 }
@@ -281,7 +281,7 @@ body {
 .header .top-contact li {
   display: inline-block;
   margin-right: 25px;
-  color: #2c2d3f;
+  color: #000000;
 }
 .header .top-contact li:last-child {
   margin-right: 0;
@@ -305,7 +305,7 @@ body {
   margin-top: 12px;
 }
 .get-quote .btn {
-  color: #000000;
+  color: #ffffff;
 }
 .header .logo {
   float: left;
@@ -328,7 +328,7 @@ body {
   margin: 0;
 }
 .header .nav li a {
-  color: #2c2d3f;
+  color: #000000;
   font-size: 14px;
   font-weight: 500;
   text-transform: capitalize;
@@ -550,7 +550,7 @@ body {
   border-radius: 3px;
   border: none;
   background: #fff;
-  color: #2c2d3f;
+  color: #000000;
 }
 .header .search-form button {
   position: absolute;
@@ -596,13 +596,13 @@ body {
   background-repeat: no-repeat;
 }
 .slider .single-slider .text {
-  margin-top: 120px;
+  margin-top: 340px;
 }
 .slider.index2 .single-slider .text {
   margin-top: 150px;
 }
 .slider .single-slider h1 {
-  color: #2c2d3f;
+  color: #000000;
   font-size: 38px;
   font-weight: 700;
   margin: 0;
@@ -613,7 +613,7 @@ body {
   color: #ec8213ff;
 }
 .slider .single-slider p {
-  color: #2c2d3f;
+  color: #000000;
   margin-top: 27px;
   font-weight: 400;
 }
@@ -632,7 +632,7 @@ body {
   margin: 0;
 }
 .slider .single-slider .btn.primary {
-  background: #2c2d3f;
+  background: #000000;
   color: #fff;
 }
 .slider .single-slider .btn.primary:before {
@@ -662,7 +662,7 @@ body {
   border-radius: 50%;
 }
 .slider .owl-carousel .owl-nav div:hover {
-  background: #2c2d3f;
+  background: #000000;
   color: #fff;
 }
 .slider .owl-carousel .owl-controls .owl-nav .owl-prev {
@@ -706,6 +706,7 @@ body {
   z-index: 3;
   border-radius: 5px;
   background: #ec8213ff;
+  height: 100%;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
   -ms-transition: all 0.3s ease-out 0s;
@@ -717,6 +718,7 @@ body {
   position: relative;
   padding: 30px;
   z-index: 2;
+  height: 100%;
 }
 .schedule .single-schedule:before {
   position: absolute;
@@ -761,6 +763,8 @@ body {
 .schedule .single-schedule span {
   display: block;
   color: #fff;
+  font-weight: 500;
+  margin-top: 8px;
 }
 .schedule .single-schedule h4 {
   font-size: 20px;
@@ -882,7 +886,7 @@ body {
 }
 .Feautes .single-features h3 {
   padding-top: 128px;
-  color: #2c2d3f;
+  color: #000000;
   font-weight: 600;
   font-size: 21px;
 }
@@ -903,9 +907,10 @@ body {
   padding: 120px 0;
 }
 .fun-facts {
-  background: url("img/fun-bg.jpg");
+  background: url("res/john-price-RAZQiZOX3mU-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: 0% 100%;
 }
 .fun-facts .single-fun {
 }
@@ -964,7 +969,7 @@ body {
 .why-choose .choose-left h3 {
   font-size: 24px;
   font-weight: 600;
-  color: #2c2d3f;
+  color: #000000;
   position: relative;
   padding-bottom: 20px;
   margin-bottom: 24px;
@@ -1328,10 +1333,10 @@ body {
 .services .single-service h4 {
   text-transform: capitalize;
   margin-bottom: 25px;
-  color: #2c2d3f;
+  color: #000000;
 }
 .services .single-service h4 a {
-  color: #2c2d3f;
+  color: #000000;
   font-size: 20px;
   font-weight: 600;
 }
@@ -1454,7 +1459,7 @@ body {
 }
 .testimonials .single-testimonial .name {
   margin-top: 22px;
-  color: #2c2d3f;
+  color: #000000;
   font-weight: 500;
   font-size: 15px;
 }
@@ -1543,7 +1548,7 @@ body {
   color: #868686;
 }
 .departments .department-tab .nav li a.active .first {
-  color: #2c2d3f;
+  color: #000000;
 }
 .departments .department-tab .nav li .second {
   font-size: 14px;
@@ -1554,7 +1559,7 @@ body {
 .departments .department-tab .tab-pane .department-left {
 }
 .departments .department-tab .tab-pane .department-left h3 {
-  color: #2c2d3f;
+  color: #000000;
   font-weight: 600;
   font-size: 26px;
   position: relative;
@@ -1568,7 +1573,7 @@ body {
   bottom: 0;
   height: 3px;
   width: 50px;
-  background: #2c2d3f;
+  background: #000000;
 }
 .departments .department-tab .tab-pane .department-left .p1 {
   color: #ec8213ff;
@@ -1639,7 +1644,7 @@ body {
 }
 .pricing-table .single-table .title {
   font-size: 21px;
-  color: #2c2d3f;
+  color: #000000;
   margin-top: 30px;
   margin-bottom: 15px;
 }
@@ -1700,7 +1705,7 @@ body {
   color: #fff;
 }
 .pricing-table .btn:before {
-  background: #2c2d3f;
+  background: #000000;
 }
 .pricing-table .btn:hover {
   color: #fff;
@@ -1844,7 +1849,7 @@ body {
   font-size: 18px;
   text-transform: capitalize;
   font-weight: 500;
-  color: #2c2d3f;
+  color: #000000;
 }
 .team .t-bottom h2 a:hover {
   color: #ec8213ff;
@@ -1866,7 +1871,7 @@ body {
 .doctor-details-item .doctor-details-contact h3 {
   font-weight: 600;
   font-size: 20px;
-  color: #2c2d3f;
+  color: #000000;
   margin-bottom: 30px;
 }
 .doctor-details-item .doctor-details-contact .basic-info {
@@ -1878,7 +1883,7 @@ body {
   display: block;
   font-weight: 400;
   font-size: 15px;
-  color: #2c2d3f;
+  color: #000000;
   margin-bottom: 10px;
 }
 .doctor-details-item .doctor-details-contact .basic-info li:last-child {
@@ -1923,7 +1928,7 @@ body {
 .doctor-details-item .doctor-details-work h3 {
   font-weight: 600;
   font-size: 20px;
-  color: #2c2d3f;
+  color: #000000;
   margin-top: 30px;
 }
 .doctor-details-item .doctor-details-work .time-sidual {
@@ -1933,7 +1938,7 @@ body {
 }
 .doctor-details-item .doctor-details-work .time-sidual li {
   display: block;
-  color: #2c2d3f;
+  color: #000000;
   width: 100%;
   margin-bottom: 10px;
 }
@@ -2026,6 +2031,7 @@ body {
   padding: 30px;
   left: 0;
   z-index: 0;
+  height: 100%;
 }
 .blog .single-news .news-content:before {
   position: absolute;
@@ -2053,7 +2059,7 @@ body {
   line-height: 24px;
 }
 .blog .single-news .news-body h2 a {
-  color: #2c2d3f;
+  color: #000000;
   font-weight: 500;
 }
 .blog .single-news .news-body h2 a:hover {
@@ -2219,7 +2225,7 @@ body {
   line-height: 18px;
 }
 .main-sidebar .single-post .content h5 a {
-  color: #2c2d3f;
+  color: #000000;
   font-weight: 500;
   font-size: 14px;
   font-weight: 500;
@@ -2321,7 +2327,7 @@ body {
 }
 .news-single .meta span,
 .news-single .meta span a {
-  color: #2c2d3f;
+  color: #000000;
   font-weight: 400;
 }
 .news-single .meta span i {
@@ -2575,7 +2581,7 @@ body {
   color: #fff;
 }
 .news-single .single-comments a:hover {
-  background: #2c2d3f;
+  background: #000000;
   color: #fff;
 }
 .news-single .single-comments a i {
@@ -2639,7 +2645,7 @@ body {
   line-height: 50px;
   font-weight: 400;
   font-size: 14px;
-  color: #2c2d3f;
+  color: #000000;
 }
 .news-single .form-group textarea {
   border: 1px solid #ddd;
@@ -2655,7 +2661,7 @@ body {
   resize: none;
   font-weight: 400;
   font-size: 14px;
-  color: #2c2d3f;
+  color: #000000;
 }
 .news-single .form-group input,
 .news-single .form-group textarea {
@@ -2719,7 +2725,7 @@ body {
 ============================*/
 .appointment {
   background: #fff;
-  padding-top: 100px;
+  padding-top: 10px;
 }
 .appointment.single-page {
   background: #fff;
@@ -2904,7 +2910,7 @@ body {
   color: #ec8213ff;
 }
 .login .login-form p a:hover {
-  color: #2c2d3f;
+  color: #000000;
 }
 .login .form {
   margin-top: 30px;
@@ -3058,7 +3064,7 @@ body {
   color: #ec8213ff;
 }
 .register .register-form p a:hover {
-  color: #2c2d3f;
+  color: #000000;
 }
 .register .form {
   margin-top: 30px;
@@ -3152,7 +3158,7 @@ body {
   color: #ec8213ff;
 }
 .register .register-form .terms:hover {
-  color: #2c2d3f;
+  color: #000000;
 }
 /*=========================
    End Register CSS
@@ -3544,14 +3550,14 @@ body {
 	Start Newsletter CSS
 ===========================*/
 .newsletter {
-  background: #edf2ff;
+  background: #ffeec1;
 }
 .newsletter .subscribe-text {
 }
 .newsletter .subscribe-text h6 {
   font-size: 22px;
   margin-bottom: 10px;
-  color: #2c2d3f;
+  color: #000000;
 }
 .newsletter .subscribe-text p {
 }
@@ -3587,7 +3593,7 @@ body {
   margin-left: 10px;
   font-size: 13px;
   font-weight: 500;
-  box-shadow: 0px 5px 15px rgba(188, 199, 255, 0.75);
+  box-shadow: 0px 5px 15px rgba(255, 187, 0, 0.75);
 }
 .newsletter .btn:before {
   border-radius: 5px;
@@ -4151,7 +4157,7 @@ body {
   transition: all 0.4s ease;
 }
 .footer .single-footer .newsletter-inner .button:hover i {
-  color: #2c2d3f;
+  color: #000000;
 }
 .footer .copyright {
   background: #ec8213ff;
@@ -4171,3 +4177,33 @@ body {
 /*=========================
 	End Footer CSS
 ===========================*/
+#move-left {
+  margin-left: -10px;
+}
+
+#three-row {
+  row-gap: 18px;
+}
+
+.this-blog {
+  padding-top: 0px;
+}
+
+#bottom-flex {
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+#info-area {
+  justify-content: center;
+}
+
+#info-2 {
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#blog-row {
+  justify-content: stretch;
+}
