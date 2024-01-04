@@ -2013,6 +2013,7 @@ body {
 .blog .single-news img {
   width: 100%;
   margin: 0;
+  height: 260px;
   padding: 0;
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
@@ -2058,8 +2059,10 @@ body {
   line-height: 24px;
 }
 .blog .single-news .news-body h2 a {
+  display: block;
   color: #000000;
   font-weight: 500;
+  height: 50px;
 }
 .blog .single-news .news-body h2 a:hover {
   color: #ec8213ff;

@@ -2757,8 +2757,8 @@ ul.inbox-pagination li {
 }
 
 .inbox-pagination a.np-btn {
-  background: #1ed085;
-  border: 1px solid #1ed085;
+  background: #15283c;
+  border: 1px solid #15283c;
   border-radius: 0;
   color: #fff;
   display: inline-block;
@@ -2918,7 +2918,7 @@ ul.inbox-pagination li {
 
 .table-hover tbody tr:hover,
 .table-hover tbody tr:focus {
-  background-color: #1ed085 !important;
+  background-color: #15283c !important;
   color: #fff;
 }
 
@@ -3382,4 +3382,8 @@ table.projects tr td:first-child {
 #map {
   height: 100%;
   min-height: 720px;
+}
+
+.mouse-link {
+  cursor: pointer;
 }
