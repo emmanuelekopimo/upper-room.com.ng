@@ -3204,9 +3204,9 @@ td ul.list-inline li {
   border-radius: 50px;
 }
 
-table.projects tr td:first-child {
+/* table.projects tr td:first-child {
   text-align: center;
-}
+} */
 
 .table.projects thead.thead-dark th {
   background: #15283c;
@@ -3237,7 +3237,7 @@ table.projects tr td:first-child {
 .login_section {
   max-width: 640px;
   background: #fff;
-  min-height: 540px;
+  min-height: 430px;
   width: 100%;
   box-shadow: 0px 0 10px -8px #000;
   margin: 0px;
@@ -3386,4 +3386,8 @@ table.projects tr td:first-child {
 
 .mouse-link {
   cursor: pointer;
+}
+
+#remove-padding {
+  padding: 0px;
 }

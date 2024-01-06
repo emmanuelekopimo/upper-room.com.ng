@@ -2014,6 +2014,7 @@ body {
   width: 100%;
   margin: 0;
   height: 260px;
+  object-fit: cover;
   padding: 0;
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
