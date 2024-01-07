@@ -3200,8 +3200,8 @@ td ul.list-inline li {
   font-size: 12px;
   border: none;
   font-weight: 400;
-  padding: 6px 15px;
-  border-radius: 50px;
+  padding: 4px 8px;
+  border-radius: 5px;
 }
 
 /* table.projects tr td:first-child {
@@ -3390,4 +3390,42 @@ td ul.list-inline li {
 
 #remove-padding {
   padding: 0px;
+}
+
+.small-button {
+  padding-inline: 15px;
+  padding-block: 5px;
+  border-width: 0px;
+  background-color: #ec8213ff;
+  border-radius: 5px;
+  font-size: 12pt;
+}
+
+.small-button:hover {
+  background-color: rgb(231, 148, 59);
+}
+
+#error-code {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid #ff1717 2px;
+  color: #ff1717;
+  width: 395px;
+  float: right;
+  padding: 0px;
+  line-height: normal;
+  font-weight: 400;
+  transition: ease all 0.1s;
+}
+
+#error-code.hide {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  #error-code {
+    max-width: 395px;
+    width: 100%;
+  }
 }

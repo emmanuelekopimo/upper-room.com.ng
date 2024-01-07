@@ -3,6 +3,10 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebas
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-analytics.js";
 // TODO: Add SDKs for Firebase products that you want to use
 import {
+  getAuth,
+  onAuthStateChanged,
+} from "https://www.gstatic.com/firebasejs/10.7.0/firebase-auth.js";
+import {
   getFirestore,
   doc,
   getDoc,
@@ -14,7 +18,6 @@ import {
   endAt,
   getDocs,
   limit,
-  where,
 } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore.js";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -34,22 +37,20 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
+// Initialize Firebase Authentication and get a reference to the service
+const auth = getAuth(app);
+
 // Initialize Cloud Firestore and get a reference to the service
 const db = getFirestore(app);
 
 //Start site
-const blogArea = document.querySelector("#blog-row");
+const contentArea = document.querySelector("#content-area");
 
-const loadPosts = async () => {
+const loadPosts = async (user) => {
   const postsRef = collection(db, "posts");
-  const postQuery = query(
-    postsRef,
-
-    orderBy("serial", "desc"),
-    limit(3),
-    where("visibility", "==", "public")
-  );
+  const postQuery = query(postsRef, orderBy("serial", "desc"));
   const querySnapshot = await getDocs(postQuery);
+
   querySnapshot.forEach(async (post) => {
     // doc.data() is never undefined for query doc snapshots
     let postData = post.data();
@@ -59,32 +60,45 @@ const loadPosts = async () => {
     let authorData = authorObject.data();
     let authorName = authorData.name;
     let postTemplate = `
-                    <!-- Single Blog -->
-                    <div class="single-news">
-                        <div class="news-head">
-                            <img src="${postData.cover}" alt="#">
-                        </div>
-                        <div class="news-body">
-                            <div class="news-content">
-                                <div class="date">1st Jan, 2024</div>
-                                <h2><a href="#">${postData.topic}</a></h2>
-                                <p class="text">${authorName}
-                                </p>
-
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Blog -->
+                <td>12/20/23</td>
+                <td>
+                ${postData.topic}
+                </td>
+                <td>
+                ${authorName}
+                </td>
+                <td>
+                ${postData.visibility == "public" ? "Posted" : "Draft"}
+                </td>
+                <td>
+                <button type="button" class="btn btn-success btn-xs">View</button>
+                ${
+                  postData.authorId == user.uid
+                    ? '<button type="button" class="btn btn-success btn-xs">Edit</button>'
+                    : ""
+                }
+                </td>
+                <td>
+                ${postData.serial}
+                </td>
                 `;
-    let postElement = document.createElement("div");
-    postElement.className = "col-lg-4 col-md-6 col-12";
+    let postElement = document.createElement("tr");
     postElement.id = post.id;
     postElement.innerHTML = postTemplate;
-    blogArea.append(postElement);
+    contentArea.append(postElement);
   });
 };
+onAuthStateChanged(auth, (user) => {
+  if (user) {
+    // User is signed in, see docs for a list of available properties
+    // https://firebase.google.com/docs/reference/js/auth.user
+    loadPosts(user);
+  } else {
+    // User is signed out
+    location.href = "./login.html";
+  }
+});
 
-loadPosts();
 /*
 const docRef = doc(db, "posts", "Q31mOlQn7oAE9lZu1Dju");
 const docSnap = await getDoc(docRef);

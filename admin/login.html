@@ -9,12 +9,12 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
    <!-- site metas -->
-   <title>Pluto - Responsive Bootstrap Admin Panel Templates</title>
+   <title>Login - Upper Room Gathering</title>
    <meta name="keywords" content="">
    <meta name="description" content="">
    <meta name="author" content="">
    <!-- site icon -->
-   <link rel="icon" href="images/fevicon.png" type="image/png" />
+   <link rel="icon" href="./../favicon.ico" />
    <!-- bootstrap css -->
    <link rel="stylesheet" href="css/bootstrap.min.css" />
    <!-- site css -->
@@ -29,6 +29,7 @@
    <link rel="stylesheet" href="css/perfect-scrollbar.css" />
    <!-- custom css -->
    <link rel="stylesheet" href="css/custom.css" />
+   <script src="./login_auth.js" type="module" async></script>
    <!-- calendar file css -->
    <link rel="stylesheet" href="js/semantic.min.css" />
    <!--[if lt IE 9]>
@@ -52,16 +53,17 @@
                      <fieldset>
                         <div class="field">
                            <label class="label_field">Email</label>
-                           <input type="email" name="email" placeholder="E-mail" />
+                           <input type="email" name="email" class="email-box" />
                         </div>
                         <div class="field">
                            <label class="label_field">Password</label>
-                           <input type="password" name="password" placeholder="Password" />
+                           <input type="password" name="password" class="pass-box" />
                         </div>
-
-                        <div class="field margin_0">
-                           <label class="label_field hidden">hidden label</label>
-                           <button class="main_bt">Log in</button>
+                        <div class="field">
+                           <div id="error-code" class="hide">Error Here</div>
+                        </div>
+                        <div class="field">
+                           <input type="button" class="small-button" value="Log In">
                         </div>
                      </fieldset>
                   </form>
@@ -85,6 +87,8 @@
    </script>
    <!-- custom js -->
    <script src="js/custom.js"></script>
+   <!--Login JS-->
+   <script src="./login.js" type="module"></script>
 </body>
 
 </html>
