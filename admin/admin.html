@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="css/perfect-scrollbar.css" />
     <!-- custom css -->
     <link rel="stylesheet" href="css/custom.css" />
+    <script src="./auth.js" type="module" async></script>
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -53,7 +54,7 @@
                             <div class="user_img"><img class="img-responsive" src="images/layout_img/g14.jpg" alt="#" />
                             </div>
                             <div class="user_info">
-                                <h6>John David</h6>
+                                <h6 class="user-name-text"></h6>
                                 <p><span class="online_animation"></span> Online</p>
                             </div>
                         </div>
@@ -102,7 +103,7 @@
                         <div class="row column_title">
                             <div class="col-md-12">
                                 <div class="page_title">
-                                    <h2>Posts</h2>
+                                    <h2>Admins</h2>
                                 </div>
                             </div>
                         </div>
@@ -121,33 +122,7 @@
                                                         <th>User ID</th>
                                                     </tr>
                                                 </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Wisdom Effiong</td>
-                                                        <td>
-                                                            wisdomeffiong@gmail.com
-                                                        </td>
-                                                        <td>
-                                                            Admin
-                                                        </td>
-                                                        <td>
-                                                            fjhfIYGFYF7t67rF&TFGYy8VY7tf
-                                                        </td>
-
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Toro Udo</td>
-                                                        <td>
-                                                            wisdomeffiong@gmail.com
-                                                        </td>
-                                                        <td>
-                                                            Super Admin
-                                                        </td>
-                                                        <td>
-                                                            fjhfIYGFYF7t67rF&TFGYy8VY7tf
-                                                        </td>
-
-                                                    </tr>
+                                                <tbody id="content-area">
 
                                                 </tbody>
                                             </table>
@@ -187,7 +162,7 @@
     </script>
     <!-- custom js -->
     <script src="js/custom.js"></script>
-    <script src="js/chart_custom_style1.js"></script>
+    <script src="./admin.js" type="module"></script>
 </body>
 
 </html>

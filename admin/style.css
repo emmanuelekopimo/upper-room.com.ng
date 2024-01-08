@@ -945,6 +945,8 @@ a[data-toggle="collapse"] {
 
 .user_profle_side {
   display: flex;
+  align-content: center;
+  flex-wrap: wrap;
 }
 
 .sidebar_user_info {
@@ -3421,6 +3423,11 @@ td ul.list-inline li {
 
 #error-code.hide {
   display: none;
+}
+
+th,
+td {
+  white-space: nowrap;
 }
 
 @media (max-width: 767px) {
