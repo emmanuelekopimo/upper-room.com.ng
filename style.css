@@ -757,8 +757,8 @@ body {
   z-index: -1;
   visibility: visible;
   opacity: 0.2;
-  right: -25px;
-  bottom: -30px;
+  right: 10px;
+  bottom: 10px;
 }
 .schedule .single-schedule span {
   display: block;
@@ -3464,7 +3464,7 @@ body {
 }
 .error-page .error-inner h1 {
   font-size: 140px;
-  text-shadow: 3px 5px 2px #3333;
+  text-shadow: 3px 5px 4px #3333;
   color: #ec8213ff;
   font-weight: 700;
 }
@@ -4209,6 +4209,21 @@ body {
 
 #blog-row {
   justify-content: stretch;
+}
+
+#center-flex {
+  justify-content: center;
+}
+#bigger {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+@media (min-width: 992px) {
+  #bigger {
+    -ms-flex: 0 0 85%;
+    flex: 0 0 85%;
+    max-width: 85%;
+  }
 }
 
 @media (min-width: 990px) {
