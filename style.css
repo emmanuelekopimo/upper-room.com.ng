@@ -48,6 +48,9 @@ Version:	1.1
 /*=============================
 	Global CSS 
 ===============================*/
+@import url(./admin/css/flaticon.css);
+@import url(./admin/css/font-awesome.min.css);
+
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -2492,7 +2495,7 @@ body {
   padding-bottom: 30px;
 }
 .news-single .single-comments.left .main {
-  padding-left: 100px;
+  padding-left: 65px;
   position: relative;
   margin-left: 100px;
 }
@@ -2517,8 +2520,8 @@ body {
   width: 12%;
 }
 .news-single .head img {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   line-height: 80px;
   border-radius: 100%;
   border: 5px solid #f8f8f8;
@@ -4217,6 +4220,15 @@ body {
 #bigger {
   padding-right: 10px;
   padding-left: 10px;
+}
+
+#comment-area {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+#post-content {
+  text-align: justify;
 }
 @media (min-width: 992px) {
   #bigger {

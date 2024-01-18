@@ -58,6 +58,21 @@ const loadPosts = async () => {
     let authorObject = await getDoc(authorRef);
     let authorData = authorObject.data();
     let authorName = authorData.name;
+    //Date
+    // Set post date
+    let postDate = new Date(postData.date.seconds * 1000);
+    let weekday = [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+    ];
+    let postDateStr = `${postDate.toLocaleString("default", {
+      month: "short",
+    })} ${postDate.getDate()}, ${postDate.getFullYear()} `;
     let postTemplate = `
                     <!-- Single Blog -->
                     <div class="single-news">
@@ -66,8 +81,8 @@ const loadPosts = async () => {
                         </div>
                         <div class="news-body">
                             <div class="news-content">
-                                <div class="date">1st Jan, 2024</div>
-                                <h2><a href="#">${postData.topic}</a></h2>
+                                <div class="date"><i class="fa fa-clock-o"></i> ${postDateStr}</div>
+                                <h2><a href="./single.html?p=${post.id}">${postData.topic}</a></h2>
                                 <p class="text">${authorName}
                                 </p>
 

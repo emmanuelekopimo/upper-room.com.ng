@@ -793,10 +793,10 @@ Version:	1.1
     margin-top: 10px;
   }
   .news-single .single-comments.left .main {
-    margin-left: 0px;
+    margin-left: 30px;
   }
   .news-single .single-comments .main {
-    padding-left: 100px;
+    padding-left: 65px;
     position: relative;
     margin-left: 100px;
     margin: 0;
