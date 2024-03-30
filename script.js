@@ -39,6 +39,8 @@ const db = getFirestore(app);
 
 //Start site
 const blogArea = document.querySelector("#blog-row");
+const dailyVerseContent = document.querySelector("#daily-verse-content");
+const dailyVerseRef = document.querySelector("#daily-verse-ref");
 
 const loadPosts = async () => {
   const postsRef = collection(db, "posts");
@@ -100,6 +102,19 @@ const loadPosts = async () => {
 };
 
 loadPosts();
+
+// Load daily verse content
+const options = { method: "GET", headers: { accept: "application/json" } };
+
+fetch("https://beta.ourmanna.com/api/v1/get?format=json&order=daily", options)
+  .then((response) => response.json())
+  .then((response) => {
+    console.log(response);
+    dailyVerseContent.innerText = response.verse.details.text;
+    dailyVerseRef.innerText =
+      response.verse.details.reference + " " + response.verse.details.version;
+  })
+  .catch((err) => console.error(err));
 /*
 const docRef = doc(db, "posts", "Q31mOlQn7oAE9lZu1Dju");
 const docSnap = await getDoc(docRef);

@@ -50,22 +50,6 @@
 
 <body>
 
-	<!-- Preloader -->
-	<div class="preloader">
-		<div class="loader">
-			<div class="loader-outter"></div>
-			<div class="loader-inner"></div>
-
-			<div class="indicator">
-				<svg width="16px" height="12px">
-					<polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
-					<polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
-				</svg>
-			</div>
-		</div>
-	</div>
-	<!-- End Preloader -->
-
 	<!-- Get Pro Button -->
 
 	<!-- Header Area -->
@@ -121,26 +105,38 @@
 	</header>
 	<!-- End Header Area -->
 
-	<!-- Error Page -->
-	<section class="error-page section">
+	<!-- Start Blog Area -->
+	<section class="blog section this-blog" id="blog">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-6 offset-lg-3 col-12">
-					<!-- Error Inner -->
-					<div class="error-inner">
-						<h1>404<span>Oop's. Sorry we can't find that page!</span></h1>
-						<p>The page you requested page does not exist on our server. That's all we know</p>
-						<!-- <form class="search-form">
-							<input placeholder="Search from Here" type="text">
-							<button class="btn" type="submit"><i class="fa fa-search"></i></button>
-						</form> -->
+				<div class="col-lg-12">
+					<div class="section-title">
+						<h2 id="blog-title">All posts</h2>
+
 					</div>
-					<!--/ End Error Inner -->
+				</div>
+			</div>
+			<div class="row" id="blog-row">
+				<div class="col-lg-4 col-md-6 col-12">
+					<div class="single-news">
+						<div class="news-head">
+							<img src="./res/christian-wiediger-NmGzVG5Wsg8-unsplash.jpg" alt="#" width="200px">
+						</div>
+						<div class="news-body">
+							<div class="news-content">
+								<div class="date"><i class="fa fa-clock-o"></i> ${postDateStr}</div>
+								<h2><a href="./single.html?p=${post.id}">${postData.topic}</a></h2>
+								<p class="text">${authorName}
+								</p>
+
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<!--/ End Error Page -->
+	<!-- End Blog Area -->
 
 	<!-- Footer Area -->
 	<footer id="footer" class="footer ">
@@ -155,10 +151,20 @@
 								as not to miss a thing</p>
 							<!-- Social -->
 							<ul class="social">
-								<li><a href="#"><i class="icofont-facebook"></i></a></li>
-								<li><a href="#"><i class="icofont-whatsapp"></i></a></li>
-								<li><a href="#"><i class="icofont-telegram"></i></a></li>
-								<li><a href="#"><i class="icofont-instagram"></i></a></li>
+								<li><a href="https://www.facebook.com/profile.php?id=100092384045362&mibextid=LQQJ4d"
+										target="_blank"><i class="icofont-facebook"></i></a></li>
+								<li><a href=""><i class="icofont-whatsapp"></i></a></li>
+								<li><a href="https://t.me/upperroomgathering" target="_blank"><i
+											class="icofont-telegram"></i></a></li>
+								<li><a href="https://www.instagram.com/upper_roomgathering?igsh=YzVkODRmOTdmMw%3D%3D&utm_source=qr"
+										target="_blank"><i class="icofont-instagram"></i></a></li>
+								<li><a href="https://www.tiktok.com/@upperroomgathering?_t=8ipxu3MOBjq&_r=1"
+										target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+											fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+											<path
+												d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z" />
+										</svg></a></li>
+
 							</ul>
 							<!-- End Social -->
 						</div>
@@ -210,6 +216,7 @@
 	<script src="js/bootstrap.min.js"></script>
 	<!-- Main JS -->
 	<script src="js/main.js"></script>
+	<script src="./all-posts.js" type="module"></script>
 </body>
 
 </html>
