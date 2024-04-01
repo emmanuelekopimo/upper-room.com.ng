@@ -41,6 +41,12 @@ const db = getFirestore(app);
 const blogArea = document.querySelector("#blog-row");
 const dailyVerseContent = document.querySelector("#daily-verse-content");
 const dailyVerseRef = document.querySelector("#daily-verse-ref");
+const dailyMotivationContent = document.querySelector(
+  "#daily-motivation-content"
+);
+const dailyMotivationAuthor = document.querySelector(
+  "#daily-motivation-author"
+);
 
 const loadPosts = async () => {
   const postsRef = collection(db, "posts");
@@ -115,6 +121,16 @@ fetch("https://beta.ourmanna.com/api/v1/get?format=json&order=daily", options)
       response.verse.details.reference + " " + response.verse.details.version;
   })
   .catch((err) => console.error(err));
+
+let seed = Math.trunc(Math.random() * 7268);
+fetch(`https://quote-garden.onrender.com/api/v3/quotes?page=${seed}`)
+  .then((response) => response.json())
+  .then((response) => {
+    let text = response.data[0].quoteText;
+    let author = response.data[0].quoteAuthor;
+    dailyMotivationContent.innerText = text;
+    dailyMotivationAuthor.innerText = author;
+  });
 /*
 const docRef = doc(db, "posts", "Q31mOlQn7oAE9lZu1Dju");
 const docSnap = await getDoc(docRef);
