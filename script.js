@@ -122,15 +122,17 @@ fetch("https://beta.ourmanna.com/api/v1/get?format=json&order=daily", options)
   })
   .catch((err) => console.error(err));
 
-let seed = Math.trunc(Math.random() * 7268);
-fetch(`https://quote-garden.onrender.com/api/v3/quotes?page=${seed}`)
-  .then((response) => response.json())
-  .then((response) => {
-    let text = response.data[0].quoteText;
-    let author = response.data[0].quoteAuthor;
-    dailyMotivationContent.innerText = text;
-    dailyMotivationAuthor.innerText = author;
-  });
+let nowDate = new Date();
+let year = nowDate.getFullYear();
+let month = nowDate.getMonth() + 1;
+let day = nowDate.getDate();
+let docName = `${year}-${month}-${day}`;
+let motivationRef = doc(db, "motivations", docName);
+let motivationObject = await getDoc(motivationRef);
+let motivationData = motivationObject.data();
+dailyMotivationContent.innerText = motivationData.text;
+dailyMotivationAuthor.innerText = motivationData.author;
+
 /*
 const docRef = doc(db, "posts", "Q31mOlQn7oAE9lZu1Dju");
 const docSnap = await getDoc(docRef);
