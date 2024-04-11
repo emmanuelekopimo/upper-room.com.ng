@@ -4,17 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin - Create Motivation</title>
+    <title>Admin - Tasks</title>
     <link rel="stylesheet" href="./../css/bootstrap.min.css">
     <script src="./create-motivations.js" defer type="module"></script>
 </head>
 
 <body>
-    <h1 class="text-center">Create Motivation for the next 90 days</h1>
-    <p class="text-center">Warning: This admin task is irreversible and would override any existing documents
-        in the firebase collection with the dates of the next 90 days.
+    <h1 class="text-center">Admins Tasks</h1>
+    <p class="text-center">Warning: This admin tasks are irreversible and would override any existing documents
+        in the firebase collection
     </p>
-    <button type="button" class="btn btn-primary ms-auto">Proceed</button>
+    <button type="button" class="btn btn-primary ms-auto" id="motivation">Generate Random Motivations for the next 90
+        days</button>
+    <button type="button" class="btn btn-primary ms-auto" id="prayers">Set daily prayers from existing array</button>
 </body>
 
 </html>

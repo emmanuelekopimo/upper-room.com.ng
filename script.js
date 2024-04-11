@@ -47,6 +47,7 @@ const dailyMotivationContent = document.querySelector(
 const dailyMotivationAuthor = document.querySelector(
   "#daily-motivation-author"
 );
+const dailyPrayerContent = document.querySelector("#daily-prayer-content");
 
 const loadPosts = async () => {
   const postsRef = collection(db, "posts");
@@ -127,12 +128,17 @@ let year = nowDate.getFullYear();
 let month = nowDate.getMonth() + 1;
 let day = nowDate.getDate();
 let docName = `${year}-${month}-${day}`;
+
 let motivationRef = doc(db, "motivations", docName);
 let motivationObject = await getDoc(motivationRef);
 let motivationData = motivationObject.data();
 dailyMotivationContent.innerText = motivationData.text;
-dailyMotivationAuthor.innerText = motivationData.author;
+dailyMotivationAuthor.innerText = " - " + motivationData.author;
 
+let prayerRef = doc(db, "prayers", docName);
+let prayerObject = await getDoc(prayerRef);
+let prayerData = prayerObject.data();
+dailyPrayerContent.innerText = prayerData.text;
 /*
 const docRef = doc(db, "posts", "Q31mOlQn7oAE9lZu1Dju");
 const docSnap = await getDoc(docRef);
